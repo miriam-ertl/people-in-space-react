@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -38,7 +44,14 @@
 }
 body {
   background-color: darkblue;
-  text-align: center;
+}
+
+main {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5em;
+  color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -47,12 +60,22 @@ h1 {
   color: white;
 }
 
-main {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 1.5em;
-  color: white;
-}
-
 ul {
   list-style-type: none;
+}
+
+.main__button-contianer {
+  width: 150px;
+  align-content: center;
+}
+
+.main__button-single {
+  background-color: darkblue;
+  min-width: 40px;
+  min-height: 20px;
+  font-size: 0.5em;
+  color: white;
+  border-color: white;
+  border-style: dotted;
+  margin: 10px;
 }

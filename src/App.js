@@ -26,6 +26,29 @@ function App() {
           ))}
         </ul>
       )}
+      <div className="main__button-container">
+        <button
+          type="button"
+          className="main__button-single"
+          aria-label="select all people in Space"
+        >
+          all
+        </button>
+        <button
+          type="button"
+          className="main__button-single"
+          aria-label="select all people in Space"
+        >
+          iss
+        </button>
+        <button
+          type="button"
+          className="main__button-single"
+          aria-label="select all people in Space"
+        >
+          tiangong
+        </button>
+      </div>
     </main>
   );
 }
