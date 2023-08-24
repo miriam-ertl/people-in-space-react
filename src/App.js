@@ -17,9 +17,11 @@ function App() {
   }, []);
 
   return (
-    <main>
-      <h1>People in Space: {numberInSpace}</h1>
-    </main>
+    <>
+      <main>
+        <h1 className="h1">People in Space: {numberInSpace}</h1>
+      </main>
+    </>
   );
 }
 
