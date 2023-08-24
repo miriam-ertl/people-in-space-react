@@ -36,13 +36,13 @@
     transform: rotate(360deg);
   }
 }
-
-main {
-  font-size: 3em;
+body {
+  background-color: darkblue;
+  text-align: center;
 }
 
 h1 {
   font-family: "Courier New", Courier, monospace;
   font-size: 1.5em;
-  color: blue;
+  color: white;
 }
