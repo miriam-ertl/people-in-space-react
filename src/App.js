@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+//import logo from "./logo.svg";
 import { useEffect, useState } from "react";
 import "./App.css";
 
@@ -17,14 +17,9 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <main>
-          <h1>People in Space: {numberInSpace}</h1>
-        </main>
-      </header>
-    </div>
+    <main>
+      <h1>People in Space: {numberInSpace}</h1>
+    </main>
   );
 }
 
