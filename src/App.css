@@ -46,3 +46,13 @@ h1 {
   font-size: 1.5em;
   color: white;
 }
+
+main {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5em;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
