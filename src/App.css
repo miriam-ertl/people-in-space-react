@@ -44,6 +44,7 @@
 }
 body {
   background-color: darkblue;
+  margin: 5px 20px 50px 20px;
 }
 
 main {
@@ -51,22 +52,32 @@ main {
   font-size: 1.5em;
   color: white;
   display: flex;
+  text-align: center;
   flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 h1 {
   font-family: "Courier New", Courier, monospace;
   font-size: 1.5em;
   color: white;
+  margin: 50px 50px;
 }
 
 ul {
   list-style-type: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .main__button-contianer {
   width: 150px;
   align-content: center;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
 }
 
 .main__button-single {
@@ -77,5 +88,4 @@ ul {
   color: white;
   border-color: white;
   border-style: dotted;
-  margin: 10px;
 }

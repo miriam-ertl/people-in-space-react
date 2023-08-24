@@ -5,6 +5,7 @@ import "./App.css";
 function App() {
   const [numberInSpace, setNumberInSpace] = useState(0);
   const [namesInSpace, setNamesInSpace] = useState([]);
+  const [craft, setCraft] = useState("All");
 
   useEffect(() => {
     async function peopleInSpace() {
@@ -16,12 +17,17 @@ function App() {
     peopleInSpace();
   }, []);
 
+  const filteredNames =
+    craft === "All"
+      ? namesInSpace
+      : namesInSpace.filter((person) => person.craft === craft);
+
   return (
     <main>
       <h1 className="h1">People in Space: {numberInSpace}</h1>
       {namesInSpace.length > 0 && (
         <ul>
-          {namesInSpace.map((name) => (
+          {filteredNames.map((name) => (
             <li key={name.name}>{name.name}</li>
           ))}
         </ul>
@@ -31,6 +37,7 @@ function App() {
           type="button"
           className="main__button-single"
           aria-label="select all people in Space"
+          onClick={() => setCraft("All")}
         >
           all
         </button>
@@ -38,6 +45,7 @@ function App() {
           type="button"
           className="main__button-single"
           aria-label="select all people in Space"
+          onClick={() => setCraft("ISS")}
         >
           iss
         </button>
@@ -45,6 +53,7 @@ function App() {
           type="button"
           className="main__button-single"
           aria-label="select all people in Space"
+          onClick={() => setCraft("Tiangong")}
         >
           tiangong
         </button>
