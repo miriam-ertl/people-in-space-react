@@ -7,10 +7,8 @@ function App() {
 
   useEffect(() => {
     async function peopleInSpace() {
-      const response = await fetch();
-      const data = await response.json(
-        "http://api.open-notify.org/astros.json"
-      );
+      const response = await fetch("http://api.open-notify.org/astros.json");
+      const data = await response.json();
       setNumberInSpace(data.number);
     }
     peopleInSpace();
